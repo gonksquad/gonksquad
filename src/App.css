@@ -52,7 +52,7 @@ body {
   height: 65vh;
   align-self: center;
 }
-
+ 
 .hero {
   will-change: filter;
   transition: filter .25s ease-out;
