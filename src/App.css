@@ -68,6 +68,13 @@ body {
   font-size: 2em;
   color: rgb(0, 187, 255);
   text-decoration: none;
+  will-change: filter;
+  transition: filter 0.75s ease-out;
+}
+
+.nav-text:hover {
+  transition: filter 0.2s ease-out;
+  filter: drop-shadow(3px 0px rgb(255, 0, 0));
 }
 
 .social-icon {
