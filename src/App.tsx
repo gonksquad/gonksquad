@@ -1,4 +1,5 @@
 import "./App.css";
+import Section from "./section";
 import "./fonts/SFDistantGalaxy.ttf";
 import { useEffect } from "react";
 import {CodeBlock} from "./codeblock.tsx";
@@ -56,7 +57,7 @@ function App() {
             marginRight: "200px",
             alignSelf: "start",
             justifySelf: "start",
-            height: "78vh",
+            height: "78%",
             paddingTop: "5vh",
           }}
         >
@@ -72,7 +73,7 @@ function App() {
           position: "sticky",
           top: 0,
           bottom: 0,
-          width: "96vw",
+          width: "100%",
         }}
       >
         <nav className="nav">
@@ -83,10 +84,11 @@ function App() {
               justifyContent: "space-between",
               width: "90vw",
               alignItems: "center",
+              margin: 0,
             }}
           >
             <li>
-              <a className="nav-text" href="#">
+              <a className="nav-text" href="#top">
                 Home
               </a>
             </li>
@@ -137,11 +139,16 @@ function App() {
       <div
         style={{
           backgroundColor: "black",
-          width: "96vw",
+          width: "100%",
           display: "flex",
           flexDirection: "column",
         }}
       >
+        <Section></Section>
+        <Section></Section>
+        <Section></Section>
+        <Section></Section>
+        <Section></Section>
       </div>
       <footer
         style={{
@@ -152,7 +159,7 @@ function App() {
         }}
       >
         <li>
-          Social Media Icons Designed by{" "}
+          Social Media Icons Designed by {""}
           <a
             style={{ fontFamily: "sans-serif", fontSize: "1em" }}
             href="https://www.freepik.com"
@@ -160,7 +167,6 @@ function App() {
             Freepik
           </a>
         </li>
-        <li>&copy; 2023 Gonk Squad. All Rights Reserved. </li>
       </footer>
     </div>
   );
