@@ -3,7 +3,6 @@ import { CopyBlock, dracula } from "react-code-blocks";
 type CodeBlockProps = {
   text: string;
   language: string;
-  showLineNumbers: boolean;
 };
 
 function CodeBlock(props: CodeBlockProps) {

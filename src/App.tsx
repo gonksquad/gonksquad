@@ -2,7 +2,7 @@ import "./App.css";
 import Section from "./section";
 import "./fonts/SFDistantGalaxy.ttf";
 import { useEffect } from "react";
-import {CodeBlock} from "./codeblock.tsx";
+import CodeBlock from "./codeblock.tsx";
 
 function App() {
   useEffect(() => {
@@ -87,11 +87,7 @@ function App() {
               margin: 0,
             }}
           >
-            <li>
-              <a className="nav-text" href="#top">
-                Home
-              </a>
-            </li>
+            <img src="./GonkWhite.png" className="gonk-logo" />
             <li>
               <a className="nav-text" href="#about">
                 About
@@ -100,6 +96,11 @@ function App() {
             <li>
               <a className="nav-text" href="#contact">
                 Contact
+              </a>
+            </li>
+            <li>
+              <a className="nav-text" href="">
+                Blog
               </a>
             </li>
             <li>
@@ -149,6 +150,7 @@ function App() {
         <Section></Section>
         <Section></Section>
         <Section></Section>
+        <CodeBlock text={'print("hello world")'} language="python"></CodeBlock>
       </div>
       <footer
         style={{
