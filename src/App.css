@@ -69,7 +69,18 @@ body {
   color: rgb(0, 187, 255);
   text-decoration: none;
   will-change: filter;
-  transition: filter 0.75s ease-out;
+  transition: filter 0.3s ease-out;
+}
+
+h2 {
+  font-family: "SF Distant Galaxy";
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.Section {
+  cursor: default;
 }
 
 .nav-text:hover {
@@ -96,8 +107,20 @@ footer {
   align-items: center;
   padding-block: 10em;
   background-color: rgb(14, 14, 14);
+  max-width: 100%;
 }
 
 header {
   background-color: rgb(0, 0, 0);
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10em;
+  background-image: url("/public/team.png");
+  background-size: cover;
+  width: 100%;
 }

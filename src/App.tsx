@@ -1,4 +1,5 @@
 import "./App.css";
+import Section from "./section";
 import "./fonts/SFDistantGalaxy.ttf";
 import { useEffect } from "react";
 
@@ -71,7 +72,7 @@ function App() {
           position: "sticky",
           top: 0,
           bottom: 0,
-          width: "96vw",
+          width: "100%",
         }}
       >
         <nav className="nav">
@@ -82,10 +83,11 @@ function App() {
               justifyContent: "space-between",
               width: "90vw",
               alignItems: "center",
+              margin: 0,
             }}
           >
             <li>
-              <a className="nav-text" href="#">
+              <a className="nav-text" href="#top">
                 Home
               </a>
             </li>
@@ -136,11 +138,17 @@ function App() {
       <div
         style={{
           backgroundColor: "black",
-          width: "96vw",
+          width: "100%",
           display: "flex",
           flexDirection: "column",
         }}
-      ></div>
+      >
+        <Section></Section>
+        <Section></Section>
+        <Section></Section>
+        <Section></Section>
+        <Section></Section>
+      </div>
       <footer
         style={{
           listStyleType: "none",
@@ -150,7 +158,7 @@ function App() {
         }}
       >
         <li>
-          Social Media Icons Designed by{" "}
+          Social Media Icons Designed by {""}
           <a
             style={{ fontFamily: "sans-serif", fontSize: "1em" }}
             href="https://www.freepik.com"
