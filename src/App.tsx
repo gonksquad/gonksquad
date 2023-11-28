@@ -2,12 +2,12 @@ import "./App.css";
 import Section from "./section";
 import "./fonts/SFDistantGalaxy.ttf";
 import { useEffect } from "react";
-import CodeBlock from "./codeblock.tsx";
+// import CodeBlock from "./codeblock.tsx";
 
 function App() {
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 100) {
         document.documentElement.style.setProperty(
           "--hero-color-1",
           "rgb(0, 110, 120)"
@@ -87,7 +87,10 @@ function App() {
               margin: 0,
             }}
           >
-            <img src="./GonkWhite.png" className="gonk-logo" />
+            <a href="http://localhost:5173/#top" className="gonk-logo">
+              <img src="./GonkWhite.png" className="gonk-logo" />
+            </a>
+
             <li>
               <a className="nav-text" href="#about">
                 About
@@ -99,40 +102,9 @@ function App() {
               </a>
             </li>
             <li>
-              <a className="nav-text" href="">
+              <a className="nav-text" href="http://localhost:5174/">
                 Blog
               </a>
-            </li>
-            <li>
-              <ul
-                style={{
-                  listStyleType: "none",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <li>
-                  <a href="https://github.com/orgs/gonksquad/">
-                    <img className="social-icon" src="./github.png" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.tiktok.com/@gonksquad_701">
-                    <img className="social-icon" src="./tiktok.png" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/channel/UCxxZ-aPJ2NvUTdGRI2oKzDg">
-                    <img className="social-icon" src="./youtube.png" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/ftcteam701/">
-                    <img className="social-icon" src="./facebook.png" />
-                  </a>
-                </li>
-              </ul>
             </li>
           </ul>
         </nav>
@@ -145,12 +117,11 @@ function App() {
           flexDirection: "column",
         }}
       >
-        <Section></Section>
-        <Section></Section>
-        <Section></Section>
-        <Section></Section>
-        <Section></Section>
-        <CodeBlock text={'print("hello world")'} language="python"></CodeBlock>
+        <Section
+          sectionimage="url('/team.png')"
+          text="Team 701"
+          id="team701"
+        ></Section>
       </div>
       <footer
         style={{
@@ -160,6 +131,35 @@ function App() {
           justifyContent: "space-evenly",
         }}
       >
+        <ul
+          style={{
+            listStyleType: "none",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <li>
+            <a href="https://github.com/orgs/gonksquad/">
+              <img className="social-icon" src="./github.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@gonksquad_701">
+              <img className="social-icon" src="./tiktok.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCxxZ-aPJ2NvUTdGRI2oKzDg">
+              <img className="social-icon" src="./youtube.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/ftcteam701/">
+              <img className="social-icon" src="./facebook.png" />
+            </a>
+          </li>
+        </ul>
         <li>
           Social Media Icons Designed by {""}
           <a

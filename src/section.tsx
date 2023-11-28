@@ -1,10 +1,20 @@
 import "./App.css";
 
-function Section() {
+function Section(props: { sectionimage: string; text: string; id: string }) {
   return (
-    <div className="Section">
-      <div className="section1">
-        <h2>Team 701</h2>
+    <div className="Section" id={props.id}>
+      <div
+        style={{
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          paddingBlock: "10em",
+          backgroundImage: 'url("/team.png")',
+          backgroundSize: "cover",
+          width: "100%",
+        }}
+      >
+        <h2>{props.text}</h2>
         <p>
           When in the Course of human events, it becomes necessary for one
           people to dissolve the political bands which have connected them with

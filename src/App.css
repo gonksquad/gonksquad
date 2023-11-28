@@ -103,12 +103,6 @@ h2 {
 
 .gonk-logo {
   width: 2em;
-  will-change: filter;
-  transition: filter 0.2s ease-out;
-}
-
-.gonk-logo:hover {
-  filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
 }
 
 footer {
@@ -122,15 +116,4 @@ footer {
 
 header {
   background-color: rgb(0, 0, 0);
-}
-
-.section1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-block: 10em;
-  background-image: url("/team.png");
-  background-size: cover;
-  width: 100%;
 }
