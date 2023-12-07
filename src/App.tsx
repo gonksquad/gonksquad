@@ -2,7 +2,7 @@ import "./App.css";
 import Section from "./section";
 import "./fonts/SFDistantGalaxy.ttf";
 import { useEffect } from "react";
-import Events from "./events.tsx";
+// import Events from "./events.tsx";
 // import CodeBlock from "./codeblock.tsx";
 
 function App() {
@@ -133,8 +133,8 @@ function App() {
           id="team701"
         ></Section>
       </div>
-      <Events>
-      </Events>
+      {/* <Events>
+      </Events> */}
       <footer
         style={{
           listStyleType: "none",
