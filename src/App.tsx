@@ -2,6 +2,7 @@ import "./App.css";
 import Section from "./section";
 import "./fonts/SFDistantGalaxy.ttf";
 import { useEffect } from "react";
+import Events from "./events.tsx";
 // import CodeBlock from "./codeblock.tsx";
 
 function App() {
@@ -90,20 +91,29 @@ function App() {
             <a href="http://localhost:5173/#top" className="gonk-logo">
               <img src="./GonkWhite.png" className="gonk-logo" />
             </a>
-
             <li>
               <a className="nav-text" href="#about">
-                About
+                Events
+              </a>
+            </li>
+            <li>
+              <a className="nav-text" href="#about">
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a className="nav-text" href="#about">
+                About Us
               </a>
             </li>
             <li>
               <a className="nav-text" href="#contact">
-                Contact
+                Blog
               </a>
             </li>
             <li>
               <a className="nav-text" href="http://localhost:5174/">
-                Blog
+                Contact Us
               </a>
             </li>
           </ul>
@@ -118,11 +128,13 @@ function App() {
         }}
       >
         <Section
-          sectionimage="url('/team.png')"
+          sectionimage="url('/team-dots.jpg')"
           text="Team 701"
           id="team701"
         ></Section>
       </div>
+      <Events>
+      </Events>
       <footer
         style={{
           listStyleType: "none",
@@ -137,6 +149,7 @@ function App() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            paddingLeft: "0px",
           }}
         >
           <li>
