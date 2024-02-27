@@ -74,6 +74,7 @@ function App() {
               alignItems: "center",
               margin: 0,
             }}
+            className="navlist"
           >
             <a href="http://localhost:5173/#top" className="gonk-logo">
               <img src="./GonkWhite.png" className="gonk-logo" />
