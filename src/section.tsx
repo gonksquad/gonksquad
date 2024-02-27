@@ -9,13 +9,21 @@ function Section(props: { sectionimage: string; text: string; id: string }) {
           justifyContent: "center",
           alignItems: "center",
           paddingBlock: "10em",
-          backgroundImage: 'url("/team-dots.jpg")',
+          backgroundImage: 'url("/teamcrop.jpg")',
           backgroundSize: "cover",
           width: "100%",
-          height: "100vh"
+          height: "100vh",
         }}
       >
-        <h2 style={{color: "black", fontSize:"3000%", textShadow:"0px 0px 10000px white"}}>{props.text}</h2>
+        {/* <h2
+          style={{
+            color: "black",
+            fontSize: "600%",
+            textShadow: "0px 0px 10000px white",
+          }}
+        >
+          {props.text}
+        </h2> */}
         {/* <p style={{color: "black"}}>
           When in the Course of human events, it becomes necessary for one
           people to dissolve the political bands which have connected them with

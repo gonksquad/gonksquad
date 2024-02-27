@@ -1,5 +1,5 @@
 import "./App.css";
-import Section from "./section";
+// import Section from "./section";
 import "./fonts/SFDistantGalaxy.ttf";
 import { useEffect } from "react";
 // import Events from "./events.tsx";
@@ -92,12 +92,12 @@ function App() {
               <img src="./GonkWhite.png" className="gonk-logo" />
             </a>
             <li>
-              <a className="nav-text" href="#about">
+              <a className="nav-text" href="#events">
                 Events
               </a>
             </li>
             <li>
-              <a className="nav-text" href="#about">
+              <a className="nav-text" href="#gallery">
                 Gallery
               </a>
             </li>
@@ -107,19 +107,19 @@ function App() {
               </a>
             </li>
             <li>
-              <a className="nav-text" href="#contact">
+              <a className="nav-text" href="#blog">
                 Blog
               </a>
             </li>
             <li>
-              <a className="nav-text" href="http://localhost:5174/">
+              <a className="nav-text" href="#contact">
                 Contact Us
               </a>
             </li>
           </ul>
         </nav>
       </header>
-      <div
+      {/* <div
         style={{
           backgroundColor: "black",
           width: "100%",
@@ -128,11 +128,14 @@ function App() {
         }}
       >
         <Section
-          sectionimage="url('/team-dots.jpg')"
+          sectionimage="url('/team.png')"
           text="Team 701"
           id="team701"
         ></Section>
-      </div>
+      </div> */}
+
+      <img style={{ width: "100%" }} src="/teamcrop.jpg" alt="" />
+
       {/* <Events>
       </Events> */}
       <footer

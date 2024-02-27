@@ -104,6 +104,15 @@ h2 {
   width: 2em;
 }
 
+.team701 {
+  display: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10em;
+  background-color: rgb(14, 14, 14);
+  max-width: 100%;
+}
+
 footer {
   display: flex;
   justify-content: center;
