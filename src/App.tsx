@@ -48,20 +48,7 @@ function App() {
         }}
         className="hero"
       >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignContent: "center",
-            justifyContent: "center",
-            marginLeft: "200px",
-            marginRight: "200px",
-            alignSelf: "start",
-            justifySelf: "start",
-            height: "78%",
-            paddingTop: "5vh",
-          }}
-        >
+        <div className="herocase">
           <h1 className="star-wars">Gonk Squad</h1>
           <img className="gonk" src="./GonkWhite.png" />
         </div>
@@ -134,7 +121,7 @@ function App() {
         ></Section>
       </div> */}
 
-      <img style={{ width: "100%" }} src="/teamcrop.jpg" alt="" />
+      <img style={{ width: "100%" }} src="/silhouette.png" alt="" />
 
       {/* <Events>
       </Events> */}
@@ -178,10 +165,7 @@ function App() {
         </ul>
         <li>
           Social Media Icons Designed by {""}
-          <a
-            style={{ fontFamily: "sans-serif", fontSize: "1em" }}
-            href="https://www.freepik.com"
-          >
+          <a className="social-link" href="https://www.freepik.com">
             Freepik
           </a>
         </li>

@@ -125,3 +125,95 @@ footer {
 header {
   background-color: rgb(0, 0, 0);
 }
+
+/* Media query and adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+
+  .hero-container,
+  .hero-content {
+    flex-direction: column;
+    padding: 10px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .footer-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ensure elements fit within the viewport */
+  .hero-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Assuming a class is added via JS based on scroll, e.g., .scrolled */
+  .scrolled {
+    background-color: #f00;
+    /* Example: Change to red on scroll */
+  }
+}
+
+/* Hide the image on mobile devices and center the text */
+@media (max-width: 768px) {
+
+  /* Hide the hero image */
+  .hero img {
+    display: none;
+  }
+
+  /* Ensure the text is centered */
+  .hero .star-wars {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Center the hero content vertically and horizontally */
+  .hero-content {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Initial state of the header nav */
+.header-nav.sticky-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+/* When scrolled, the header sticks to the top */
+.header-nav.sticky-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.herocase {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  align-self: start;
+  justify-self: start;
+  height: 78%;
+  padding-top: 5vh;
+}
+
+@media (max-width: 768px) {
+
+  .hero .content,
+  .hero .star-wars,
+  .herocase {
+    text-align: center;
+    justify-content: center;
+    margin-left: 0;
+    padding-left: 10%;
+  }
+}
