@@ -122,7 +122,7 @@ function App() {
         ></Section>
       </div> */}
 
-      <img style={{ width: "100%" }} src="/silhouette.png" alt="" />
+      <img style={{ width: "100%" }} src="/teamcrop.jpg" alt="" />
 
       {/* <Events>
       </Events> */}
