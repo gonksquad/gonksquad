@@ -206,7 +206,7 @@ header {
   padding-top: 5vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
   .hero .content,
   .hero .star-wars,
@@ -216,8 +216,11 @@ header {
     margin: 0;
     padding: 0;
     padding-left: 2%;
-    padding-top: 10%;
     width: 100%;
+  }
+
+  .star-wars {
+    font-size: 20vw;
   }
 
   .nav {
