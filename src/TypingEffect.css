@@ -1,0 +1,58 @@
+/* Existing typing effect styles */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.typing-effect {
+    /* border-right: 2px solid transparent; */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 3s steps(40, end) forwards;
+    width: unset;
+    text-wrap: wrap;
+}
+
+@keyframes blinkCursor {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.typing-effect-container,
+.typing-effect,
+.blinking-cursor {
+    display: inline-flex;
+    max-width: 100%;
+}
+
+.typing-effect-container {
+    width: 100%;
+    align-content: left;
+}
+
+.blinking-cursor {
+    width: 10px;
+    height: 20px;
+    align-self: left;
+    background-color: rgb(255, 255, 255);
+    animation: blinkCursor 1s steps(1) infinite;
+}
+
+/* Ensure the container does not enforce a new line unless desired */
+.typing-effect-container {
+    white-space: nowrap;
+    /* Prevents breaking into a new line */
+}
