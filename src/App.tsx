@@ -2,7 +2,7 @@ import "./App.css";
 // import Section from "./section";
 import "./fonts/SFDistantGalaxy.ttf";
 import { useEffect } from "react";
-import TypingParagraph from "./typingparagraph";
+// import TypingParagraph from "./typingparagraph";
 // import Events from "./events.tsx";
 // import CodeBlock from "./codeblock.tsx";
 
@@ -123,7 +123,7 @@ function App() {
         ></Section>
       </div> */}
 
-      <TypingParagraph />
+      {/* <TypingParagraph /> */}
 
       <img style={{ width: "100%" }} src="/teamcrop.jpg" alt="" />
 
