@@ -36,6 +36,7 @@
 .blinking-cursor {
     display: inline-flex;
     max-width: 100%;
+    text-wrap: none;
 }
 
 .typing-effect-container {
