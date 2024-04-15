@@ -34,7 +34,7 @@ body {
 
 @font-face {
   font-family: "SF Distant Galaxy";
-  src: local("SFDistantGalaxy"), url("./fonts/Starjhol.ttf") format("truetype");
+  src: local("SFDistantGalaxy"), url("./fonts/Starjout.ttf") format("truetype");
 }
 
 .star-wars {
